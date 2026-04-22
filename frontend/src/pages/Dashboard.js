@@ -15,11 +15,10 @@ function Dashboard() {
 
   // 🔐 Protect route
   useEffect(() => {
-    if (!token) {
-      navigate("/login");
-    }
-  }, []);
-
+  if (!token) {
+    navigate("/login");
+  }
+}, [token, navigate]);
   // 🔹 Update Course
  const updateCourse = async () => {
   try {
