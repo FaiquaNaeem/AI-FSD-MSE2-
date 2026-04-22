@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL:process.env.REACT_APP_API_URL // change after deployment
+  baseURL: "https://ai-fsd-mse2-ik72.onrender.com"
 });
 
 export default API;
